@@ -612,7 +612,7 @@ impl LevelFilter {
             3 => Some(LevelFilter::Info),
             4 => Some(LevelFilter::Debug),
             5 => Some(LevelFilter::Trace),
-            _ => None,
+            _ => Some(LevelFilter::Off),
         }
     }
 
